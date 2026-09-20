@@ -1,0 +1,9 @@
+# Profile READMEs legitimately use inline HTML, long table rows and emoji headings.
+default: true
+MD013: false   # line length
+MD024:
+  siblings_only: true
+MD033: false   # inline HTML (centering, <details>, <picture>)
+MD036: false   # emphasis used as label
+MD041: false   # first line is an <h1> HTML block
+MD060: false   # table column style
