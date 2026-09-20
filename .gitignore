@@ -1,0 +1,15 @@
+# secrets and local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# tooling output
+dist/
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+.vscode/
+.idea/
