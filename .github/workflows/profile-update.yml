@@ -1,0 +1,55 @@
+name: Profile update
+
+# Re-renders the data-driven README sections (projects, repo health, stack,
+# certifications, ...) from data/profile.json plus live repository stats.
+# The README itself is NOT in the trigger paths, so the bot commit cannot re-trigger this workflow.
+
+on:
+  schedule:
+    - cron: "5 4 * * 1" # weekly, Monday
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/profile.json"
+      - "scripts/update_readme.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Refresh README sections
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate README sections
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/update_readme.py
+
+      - name: Commit changes
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/snapshot.json
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "chore(profile): refresh README sections [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
