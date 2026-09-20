@@ -35,7 +35,7 @@
         "Gemini API"
       ],
       "status": "🚧 In progress",
-      "demo": "https://agromind-ai-beta.vercel.app"
+      "demo": "https://agromind.vercel.app"
     },
     {
       "id": "target-bio-classes",
@@ -65,7 +65,7 @@
         "Cloudinary"
       ],
       "status": "🚧 In progress",
-      "demo": "https://arvika-tech-8wnn.vercel.app"
+      "demo": "https://arvikatech.vercel.app"
     },
     {
       "id": "multi-threaded-simulator",
