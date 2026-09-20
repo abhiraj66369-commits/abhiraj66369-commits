@@ -1,0 +1,10 @@
+# Link checker settings. Generated/private targets are excluded on purpose.
+accept = [200, 201, 204, 301, 302, 403, 429]
+max_concurrency = 4
+timeout = 20
+exclude = [
+  # `output` branch only exists after the snake workflow has run once
+  "raw.githubusercontent.com/.*/output/.*",
+  # placeholders
+  "example.com",
+]
