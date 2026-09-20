@@ -1,0 +1,58 @@
+name: Contribution snake
+
+# Generates the animated contribution snake and publishes it to the `output`
+# branch (a single force-pushed commit, so it never bloats history).
+# README reads: https://raw.githubusercontent.com/<user>/<repo>/output/github-snake*.svg
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # daily, off-peak minute
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/snake.yml"]
+
+# Least privilege: only this workflow needs to write, and only to this repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Build and publish snake
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Publish to output branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          test -s dist/github-snake.svg && test -s dist/github-snake-dark.svg
+          rm -rf /tmp/out && mkdir /tmp/out
+          cp dist/*.svg /tmp/out/
+          cd /tmp/out
+          git init -q -b output
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "chore: update contribution snake"
+          git push --force origin output
