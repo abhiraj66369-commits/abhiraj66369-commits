@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="110" viewBox="0 0 800 110" role="img" aria-labelledby="t">
+  <title id="t">Isometric contribution calendar: placeholder until the Metrics workflow runs for the first time</title>
+  <rect width="800" height="110" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="400" y="48" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" fill="#f0f6fc">Isometric contribution calendar</text>
+  <text x="400" y="76" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#8b949e">Placeholder. Run Actions, then "Metrics", then "Run workflow" to generate the real card.</text>
+</svg>

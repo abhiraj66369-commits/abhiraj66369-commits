@@ -1,0 +1,335 @@
+{
+  "_comment": "Single source of truth. Edit this file, then run scripts/update_readme.py (or let the profile-update workflow do it). Anything null/empty is omitted from the README instead of being faked.",
+  "owner": "abhiraj66369-commits",
+  "name": "Kumar Abhinash",
+  "roles": [
+    "Full-Stack Developer",
+    "AI Builder",
+    "Software Engineer in Progress",
+    "Product Builder"
+  ],
+  "links": {
+    "github": "https://github.com/abhiraj66369-commits",
+    "portfolio": null,
+    "resume": null,
+    "linkedin": null,
+    "email": null
+  },
+  "focus": [
+    "Evolving AgroMind AI, a bilingual agriculture assistant built on the Gemini API",
+    "Full-stack product engineering with React, Node.js and PostgreSQL (Supabase)",
+    "Automating my own workflow with GitHub Actions"
+  ],
+  "projects": [
+    {
+      "id": "agromind-ai",
+      "repo": "agromind-ai",
+      "emoji": "🌾",
+      "name": "AgroMind AI",
+      "description": "Agriculture-only chatbot for farmers, in Hindi and English. Gemini-backed Express API with rate limiting, Helmet and CORS, plus a React chat UI with history and dark/light mode.",
+      "tech": [
+        "React",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "Gemini API"
+      ],
+      "status": "🚧 In progress",
+      "demo": "https://agromind-ai-beta.vercel.app"
+    },
+    {
+      "id": "target-bio-classes",
+      "repo": "TARGETBIO-CLASSES",
+      "emoji": "🎓",
+      "name": "Target Bio Classes",
+      "description": "EdTech learning platform for a coaching institute: OTP login, student registration, course demos, paid access, teacher dashboard, video/notes/DPP uploads, payment verification and an enquiry panel.",
+      "tech": [
+        "React",
+        "Node.js"
+      ],
+      "status": "🚧 In progress",
+      "demo": "https://targetbio-classes.vercel.app"
+    },
+    {
+      "id": "arvika-tech",
+      "repo": "arvika--tech",
+      "emoji": "🏢",
+      "name": "Arvika Tech",
+      "description": "Business management platform with CEO, client and employee dashboards: projects, payment proofs, salary records, attendance and messaging. JWT auth on a PostgreSQL (Supabase) backend.",
+      "tech": [
+        "React",
+        "Vite",
+        "Node.js",
+        "PostgreSQL",
+        "Supabase",
+        "Cloudinary"
+      ],
+      "status": "🚧 In progress",
+      "demo": "https://arvika-tech-8wnn.vercel.app"
+    },
+    {
+      "id": "multi-threaded-simulator",
+      "repo": "multi-threaded-simulator",
+      "emoji": "🧵",
+      "name": "Multi-threaded Simulator",
+      "description": "Real-time simulator for multithreading models (many-to-one, one-to-one, many-to-many), CPU scheduling and semaphore/monitor synchronization, with thread-state timelines and interactive controls.",
+      "tech": [
+        "HTML"
+      ],
+      "status": "📄 Report included",
+      "demo": null
+    },
+    {
+      "id": "studyos",
+      "repo": null,
+      "emoji": "🧠",
+      "name": "StudyOS",
+      "description": "NEED USER INPUT: repository URL and a one-line description.",
+      "tech": [],
+      "status": "🚧",
+      "demo": null,
+      "hidden": true
+    },
+    {
+      "id": "kanhaiya",
+      "repo": null,
+      "emoji": "🏠",
+      "name": "KANHAIYA",
+      "description": "NEED USER INPUT: repository URL and a one-line description.",
+      "tech": [],
+      "status": "🚧",
+      "demo": null,
+      "hidden": true
+    }
+  ],
+  "more_repos": [
+    {
+      "repo": "WEB-LEARN",
+      "note": "Learning platform"
+    },
+    {
+      "repo": "STUDENT-DETAILS",
+      "note": "Student details DevOps demo"
+    }
+  ],
+  "dev_tools": [
+    {
+      "repo": "multi-threaded-simulator",
+      "description": "Interactive teaching tool for operating-system concepts: thread models, CPU scheduling, synchronization."
+    },
+    {
+      "repo": "WEB-LEARN",
+      "description": "Learning platform experiments in plain HTML."
+    }
+  ],
+  "engineering_practices": [
+    {
+      "practice": "Server-side secrets",
+      "where": "AgroMind AI keeps the Gemini API key on the backend and ships a .env.example"
+    },
+    {
+      "practice": "API hardening",
+      "where": "AgroMind AI: rate limiting, Helmet security headers, CORS restricted to the frontend, input sanitization and length limits"
+    },
+    {
+      "practice": "Authentication and roles",
+      "where": "Arvika Tech: JWT auth with CEO / client / employee dashboards"
+    },
+    {
+      "practice": "Database setup scripts",
+      "where": "Arvika Tech: repeatable setup-db script for PostgreSQL tables and constraints"
+    },
+    {
+      "practice": "Automation",
+      "where": "This profile repo: GitHub Actions for snake, metrics, README refresh and quality checks"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Languages",
+      "name": "JavaScript",
+      "icon": "js",
+      "evidence": "agromind-ai, arvika--tech, TARGETBIO-CLASSES"
+    },
+    {
+      "group": "Languages",
+      "name": "HTML",
+      "icon": "html",
+      "evidence": "multi-threaded-simulator, WEB-LEARN"
+    },
+    {
+      "group": "Languages",
+      "name": "CSS",
+      "icon": "css",
+      "evidence": "agromind-ai (Tailwind + index.css)"
+    },
+    {
+      "group": "Frontend",
+      "name": "React",
+      "icon": "react",
+      "evidence": "agromind-ai, arvika--tech, TARGETBIO-CLASSES"
+    },
+    {
+      "group": "Frontend",
+      "name": "Tailwind CSS",
+      "icon": "tailwind",
+      "evidence": "agromind-ai"
+    },
+    {
+      "group": "Frontend",
+      "name": "Vite",
+      "icon": "vite",
+      "evidence": "arvika--tech"
+    },
+    {
+      "group": "Backend",
+      "name": "Node.js",
+      "icon": "nodejs",
+      "evidence": "agromind-ai, arvika--tech"
+    },
+    {
+      "group": "Backend",
+      "name": "Express",
+      "icon": "express",
+      "evidence": "agromind-ai"
+    },
+    {
+      "group": "Backend",
+      "name": "REST APIs",
+      "icon": null,
+      "evidence": "agromind-ai, arvika--tech"
+    },
+    {
+      "group": "Backend",
+      "name": "JWT auth",
+      "icon": null,
+      "evidence": "arvika--tech"
+    },
+    {
+      "group": "Database",
+      "name": "PostgreSQL",
+      "icon": "postgres",
+      "evidence": "arvika--tech"
+    },
+    {
+      "group": "Database",
+      "name": "Supabase",
+      "icon": "supabase",
+      "evidence": "arvika--tech"
+    },
+    {
+      "group": "AI / LLM",
+      "name": "Gemini API",
+      "icon": null,
+      "evidence": "agromind-ai"
+    },
+    {
+      "group": "AI / LLM",
+      "name": "Prompt design (system prompts)",
+      "icon": null,
+      "evidence": "agromind-ai topic scoping"
+    },
+    {
+      "group": "DevOps",
+      "name": "Git",
+      "icon": "git",
+      "evidence": "all repos"
+    },
+    {
+      "group": "DevOps",
+      "name": "GitHub Actions",
+      "icon": "githubactions",
+      "evidence": "this repo's workflows"
+    },
+    {
+      "group": "Cloud / Deployment",
+      "name": "Vercel",
+      "icon": "vercel",
+      "evidence": "AgroMind AI, Target Bio Classes, Arvika Tech demos"
+    },
+    {
+      "group": "Cloud / Deployment",
+      "name": "Render",
+      "icon": null,
+      "evidence": "arvika--tech API"
+    },
+    {
+      "group": "Cloud / Deployment",
+      "name": "Cloudinary",
+      "icon": null,
+      "evidence": "arvika--tech"
+    },
+    {
+      "group": "Tools",
+      "name": "GitHub",
+      "icon": "github",
+      "evidence": "profile"
+    },
+    {
+      "group": "Tools",
+      "name": "VS Code",
+      "icon": "vscode",
+      "evidence": "TARGETBIO-CLASSES has .vscode"
+    },
+    {
+      "group": "Languages",
+      "name": "Python",
+      "icon": "py",
+      "confirmed": false,
+      "evidence": null
+    },
+    {
+      "group": "Languages",
+      "name": "C++",
+      "icon": "cpp",
+      "confirmed": false,
+      "evidence": null
+    },
+    {
+      "group": "Database",
+      "name": "Prisma",
+      "icon": "prisma",
+      "confirmed": false,
+      "evidence": null
+    },
+    {
+      "group": "DevOps",
+      "name": "Docker",
+      "icon": "docker",
+      "confirmed": false,
+      "evidence": null
+    },
+    {
+      "group": "AI / LLM",
+      "name": "RAG / vector search",
+      "icon": null,
+      "confirmed": false,
+      "evidence": null
+    }
+  ],
+  "learning": [],
+  "roadmap": [
+    {
+      "item": "AgroMind AI: ground answers with retrieval over an agricultural knowledge base (RAG)",
+      "status": "planned"
+    },
+    {
+      "item": "AgroMind AI: location, crop and weather context",
+      "status": "planned"
+    },
+    {
+      "item": "Screenshots and architecture docs for every flagship repo",
+      "status": "planned"
+    },
+    {
+      "item": "Automated tests and CI on flagship repos",
+      "status": "planned"
+    }
+  ],
+  "certifications": [],
+  "coding_profiles": [],
+  "open_source": [],
+  "metrics": {
+    "timezone": "Asia/Kolkata"
+  }
+}

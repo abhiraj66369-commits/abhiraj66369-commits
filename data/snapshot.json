@@ -1,0 +1,10 @@
+{
+  "_comment": "Cache of repository stats. Refreshed automatically by scripts/update_readme.py when the GitHub API is reachable. Seeded with values observed on the public repo pages on 2026-09-20; null means not observed.",
+  "as_of": "2026-09-20",
+  "repos": {
+    "agromind-ai":              {"stars": 0, "forks": 0, "open_issues": null, "pushed_at": null, "language": "JavaScript", "ci": null, "release": null},
+    "TARGETBIO-CLASSES":        {"stars": 0, "forks": 0, "open_issues": null, "pushed_at": null, "language": "JavaScript", "ci": null, "release": null},
+    "arvika--tech":             {"stars": 1, "forks": 0, "open_issues": null, "pushed_at": null, "language": "JavaScript", "ci": null, "release": null},
+    "multi-threaded-simulator": {"stars": 1, "forks": 0, "open_issues": null, "pushed_at": null, "language": "HTML", "ci": null, "release": null}
+  }
+}

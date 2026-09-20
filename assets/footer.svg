@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" role="img" aria-labelledby="t d">
+  <title id="t">Thanks for visiting</title>
+  <desc id="d">Animated footer alternating between "Thanks for visiting" and "Let's build something useful".</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161b2e"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .msg { opacity: 0; animation: swap 8s infinite; }
+    .m2 { animation-delay: 4s; }
+    @keyframes swap { 0% {opacity:0} 5% {opacity:1} 45% {opacity:1} 50% {opacity:0} 100% {opacity:0} }
+    .flow { stroke-dasharray: 40 20; animation: dash 3s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -60; } }
+    @media (prefers-reduced-motion: reduce) { .msg, .flow { animation: none; } .m1 { opacity: 1; } }
+  </style>
+  <rect width="900" height="120" rx="14" fill="url(#bg)"/>
+  <line class="flow" x1="40" y1="100" x2="860" y2="100" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+  <g class="mono" font-size="22" fill="#f0f6fc" text-anchor="middle">
+    <text class="msg m1" x="450" y="58">Thanks for visiting</text>
+    <text class="msg m2" x="450" y="58">Let's build something useful</text>
+  </g>
+</svg>
