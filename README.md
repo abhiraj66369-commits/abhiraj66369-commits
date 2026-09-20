@@ -58,10 +58,10 @@ Live numbers pulled from the GitHub API by the [profile-update workflow](.github
 <!-- BEGIN:HEALTH -->
 | Repository | ★ Stars | Forks | Open issues + PRs | CI | Latest release | Last push | Main language |
 |---|---|---|---|---|---|---|---|
-| [agromind-ai](https://github.com/abhiraj66369-commits/agromind-ai) | 0 | 0 | — | — | — | — | JavaScript |
-| [TARGETBIO-CLASSES](https://github.com/abhiraj66369-commits/TARGETBIO-CLASSES) | 0 | 0 | — | — | — | — | JavaScript |
-| [arvika--tech](https://github.com/abhiraj66369-commits/arvika--tech) | 1 | 0 | — | — | — | — | JavaScript |
-| [multi-threaded-simulator](https://github.com/abhiraj66369-commits/multi-threaded-simulator) | 1 | 0 | — | — | — | — | HTML |
+| [agromind-ai](https://github.com/abhiraj66369-commits/agromind-ai) | 0 | 0 | 0 | — | — | 2026-05-10 | JavaScript |
+| [TARGETBIO-CLASSES](https://github.com/abhiraj66369-commits/TARGETBIO-CLASSES) | 0 | 0 | 0 | — | — | 2026-02-03 | JavaScript |
+| [arvika--tech](https://github.com/abhiraj66369-commits/arvika--tech) | 1 | 0 | 0 | — | — | 2026-08-23 | JavaScript |
+| [multi-threaded-simulator](https://github.com/abhiraj66369-commits/multi-threaded-simulator) | 1 | 0 | 0 | — | — | 2025-12-21 | HTML |
 
 <sub>Real numbers only; — means not available. Stars across these repositories: 2. Snapshot date: 2026-09-20.</sub>
 <!-- END:HEALTH -->
