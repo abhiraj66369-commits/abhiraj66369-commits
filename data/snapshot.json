@@ -1,6 +1,6 @@
 {
   "_comment": "Cache of repository stats. Refreshed automatically by scripts/update_readme.py when the GitHub API is reachable. Seeded with values observed on the public repo pages on 2026-09-20; null means not observed.",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-21",
   "repos": {
     "agromind-ai": {
       "stars": 0,
